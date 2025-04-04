@@ -1,0 +1,29 @@
+<div class="container">
+  <div data-aos="fade-up">
+    <h3 class="m-auto text-center pt-3">{{ 'SERVICES' | translate }}</h3>
+    <div class="yellowline" style="border: 3px solid red; width: 100px; margin: auto; margin-top: 5px;"></div>
+    <h4  class="w-75 m-auto lh-lg 
+      ">{{ 'SERVICES_DESCRIPTION' | translate }}</h4>
+  </div>
+
+  <div class="row row-gap-4 my-3 justify-content-center">
+    <div
+      *ngFor="let service of services"
+      class="col-12 col-md-6"
+      data-aos="fade-up"
+    >
+      <div class="card">
+        <!-- الصورة الخاصة بالخدمة -->
+        <img [src]="service.image" alt="{{ service.title }}" style="object-fit: cover;" />
+
+        <!-- الطبقة العلوية عند التحريك -->
+        <div class="overlay">
+          <div class="text-hover">{{ service.description }}</div>
+        </div>
+
+        <!-- النص تحت الصورة -->
+        <p class="text-below">{{ service.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="image-gallery">
+    <div class="large-image">
+      <img [src]="selectedImage || images[0].url" alt="Large Image">
+    </div>
+    <div class="thumbnail-images">
+      <div *ngFor="let image of images; let i = index" (click)="selectImage(image.url, i)" [class.selected]="selectedImageIndex === i">
+        <img [src]="image.url" alt="Thumbnail Image">
+      </div>
+    </div>
+  </div>
+  

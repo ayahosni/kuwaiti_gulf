@@ -1,0 +1,23 @@
+<h2 class="section-title text-center mt-20">{{ 'DEPARTMENTS.TITLE' | translate }}</h2>
+<div class="yellowline" style="border: 3px solid red; width: 100px;  "></div>
+
+<h4 class="w-75 m-auto lh-lg text-center mb-4">
+    {{ 'DEPARTMENTS.DESCRIPTION' | translate }}
+</h4>
+
+<div class="departments-grid">
+    <div *ngFor="let department of departments" class="department-card" (click)="navigateToProducts(department.id)">
+        <div class="card-image">
+            <img [src]="department.imageUrl" [alt]="department.name">
+        </div>
+        <div class="card-content">
+            <div class="card-icon"></div>
+            <h3 class="department-name">{{ department.name }}</h3>
+            <p class="department-desc">{{ department.description }}</p>
+        </div>
+        <div class="card-overlay">
+            <span>{{ 'DEPARTMENTS.VIEW_PRODUCTS' | translate }}</span>
+            <i class="fas fa-arrow-left"></i>
+        </div>
+    </div>
+</div>

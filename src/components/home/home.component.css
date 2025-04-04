@@ -1,0 +1,54 @@
+/* اللون الأساسي للنص */
+.why-us {
+    color: #333; /* لون نص رئيسي داكن */
+}
+
+/* عنوان القسم */
+.section-title {
+    
+    color: #222222;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-right: 1rem;
+}
+
+/* الخط الأحمر تحت العنوان */
+
+
+/* تصميم البطاقة */
+.why-card {
+    background: rgba(255, 255, 255, 0.1); /* خلفية شفافة قليلاً */
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* إضافة حدود خفيفة */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ظل بسيط لإضافة عمق */
+}
+
+/* تأثير عند التحريك فوق البطاقة */
+.why-card:hover {
+    background: rgba(255, 255, 255, 0.3); /* زيادة الشفافية عند التحريك */
+    transform: translateY(-5px); /* رفع البطاقة قليلاً */
+}
+
+/* أيقونة داخل البطاقة */
+.icon {
+    font-size: 50px;
+    color: #e74c3c; /* نفس لون العنوان والأيقونات */
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* تأثير عند التحريك فوق الأيقونة */
+.icon:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند التحريك */
+}
+
+/* نص البطاقة */
+.why-card p {
+    color: #555; /* لون نص أقل كثافة من العنوان */
+    font-size: 1rem;
+    line-height: 1.6; /* تحسين المسافة بين السطور */
+}

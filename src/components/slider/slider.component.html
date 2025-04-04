@@ -1,0 +1,34 @@
+<div id="header-carousel" class="carousel slide carousel-fade" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let slide of slides; let i = index; let first = first" 
+             [class.active]="first">
+            <img class="w-100" [src]="slide.image" [alt]="'Slide ' + (i + 1)">
+            <div class="carousel-content position-absolute animate__animated animate__fadeInUp">
+                <h2>{{ 'SLIDER.COMPANY_NAME' | translate }}</h2>
+                <ngx-typed-writer 
+                    *ngIf="slide.text"
+                    class="h5 lh-base"
+                    [strings]="[slide.text]"
+                    [shuffle]="false" 
+                    [isHTML]="false" 
+                    [backSpeed]="backSpeed" 
+                    [typeSpeed]="typeSpeed"
+                    (onComplete)="goToNextSlide()">
+                </ngx-typed-writer>
+                <br>
+                <a [routerLink]="['/about']" class="btn btn-warning mt-2">
+                    {{ 'SLIDER.READ_MORE' | translate }}
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">{{ 'PREVIOUS' | translate }}</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">{{ 'NEXT' | translate }}</span>
+    </button>
+</div>

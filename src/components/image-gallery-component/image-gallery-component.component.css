@@ -1,0 +1,37 @@
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .large-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px; /* تباعد بين الصور */
+  }
+  
+  .large-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail-images div {
+    margin-right: 10px;
+    margin-bottom: 10px; /* تباعد بين الصور الصغيرة */
+  }
+  
+  .thumbnail-images img {
+    max-width: 100px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .selected img {
+    border: 2px solid blue;
+  }
+  

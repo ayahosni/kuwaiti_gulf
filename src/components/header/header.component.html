@@ -1,0 +1,92 @@
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar sticky-top">
+    <div class="container-fluid">
+        <div class="navbar-brand-container">
+            <a class="navbar-brand" routerLink="/home">
+                <img src="../../assets/erasebg-transformed.png" alt="Logo" class="navbar-logo">
+            </a>
+        </div>
+
+        <div class="navbar-toggle-container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/home">
+                        {{ 'HOME' | translate }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/about">
+                        {{ 'ABOUT' | translate }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/services">
+                        {{ 'SERVICES' | translate }}
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/products">
+                        {{ 'PRODUCTS' | translate }}
+                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" routerLinkActive="active" routerLink="/contact">
+                        {{ 'CONTACT' | translate }}
+                    </a>
+                </li>
+            </ul>
+
+            <div class="navbar-language-container">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLanguageDropdown" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg *ngIf="currentLanguage === 'ar'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="24" height="24">
+                                <path fill="#fff" d="M0 0h640v480H0z"/>
+                                <path fill="#007a4d" d="M0 0h640v160H0z"/>
+                                <path fill="#ce1126" d="M0 320h640v160H0z"/>
+                                <path fill="#000" d="M0 0l250 160L0 320z"/>
+                            </svg>
+                            <svg *ngIf="currentLanguage === 'en'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="24" height="24">
+                                <path fill="#012169" d="M0 0h640v480H0z"/>
+                                <path fill="#FFF" d="M75 0l244 181L562 0h78v62L400 240l240 178v62h-78L319 301 75 480H0v-62l240-178L0 62V0z"/>
+                                <path fill="#C8102E" d="M424 281l216 159v40L369 281zm-208 0L0 440v40l216-159zM640 0v40L369 199l271 241V0zM0 0l319 241L640 0H0z"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
+                            <li>
+                               <a class="dropdown-item" href="#" (click)="changeLanguage('ar', $event)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="24" height="24" class="me-2">
+                                        <path fill="#fff" d="M0 0h640v480H0z"/>
+                                        <path fill="#007a4d" d="M0 0h640v160H0z"/>
+                                        <path fill="#ce1126" d="M0 320h640v160H0z"/>
+                                        <path fill="#000" d="M0 0l250 160L0 320z"/>
+                                    </svg>
+                                    الكويت (العربية)
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" (click)="changeLanguage('en', $event)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="24" height="24" class="me-2">
+                                        <path fill="#012169" d="M0 0h640v480H0z"/>
+                                        <path fill="#FFF" d="M75 0l244 181L562 0h78v62L400 240l240 178v62h-78L319 301 75 480H0v-62l240-178L0 62V0z"/>
+                                        <path fill="#C8102E" d="M424 281l216 159v40L369 281zm-208 0L0 440v40l216-159zM640 0v40L369 199l271 241V0zM0 0l319 241L640 0H0z"/>
+                                    </svg>
+                                    United Kingdom (English)
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

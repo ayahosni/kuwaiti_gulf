@@ -1,0 +1,107 @@
+{
+  "HOME": "Home",
+  "ABOUT": "About Us",
+  "SERVICES": "Our Services",
+  "PRODUCTS": "Our Products",
+  "CONTACT": "Contact Us",
+
+  "SLIDER": {
+    "COMPANY_NAME": "Italian-Kuwaiti Wholesale and Retail Trading Company",
+    "STRINGS": [
+      "We provide high-quality electrical products according to Kuwaiti specifications, including circuit breakers, cylinders, lamps, and switches at competitive prices.",
+      "We efficiently execute and supply project requests, with precise installation of all electrical products to ensure the highest performance levels.",
+      "We offer fast delivery services to all areas of Kuwait through exhibitions and associations, ensuring easy product access.",
+      "We provide warranty and replacement for sold products according to the specified period, with our commitment to quality and customer satisfaction."
+    ],
+    "READ_MORE": "Read More"
+  },
+
+  "ABOUT_SECTION": {
+    "TITLE": "About Us",
+    "US_DESCRIPTION": "Our journey to the top began with steady and confident steps and is still ongoing. We, at the Kuwaiti-Gulf institution in the field of electrical contracting, take pride in our progress as active partners in accelerating development. Our team consists of top professionals with exceptional expertise and unique ideas, all working together to achieve our vision."
+  },
+
+  "COUNTER": {
+    "CLIENTS": "Clients",
+    "TOTAL_PROJECTS": "Total Projects",
+    "ONGOING_PROJECTS": "Ongoing Projects",
+    "COMPLETED_PROJECTS": "Completed Projects"
+  },
+
+  "CERTIFICATES": {
+    "TITLE": "Certified Licenses and Certificates",
+    "VAL_LICENSE": "VAL License for Real Estate Activity",
+    "EJAR_CERTIFICATE": "Membership Certificate from the Electronic Rental Services Network (Ejar)"
+  },
+
+  "BUTTONS": {
+    "LANG_AR": "Arabic",
+    "LANG_EN": "English"
+  },
+
+  "NAVIGATION": {
+    "PREVIOUS": "Previous",
+    "NEXT": "Next"
+  },
+
+  "WHY_US": {
+    "TITLE": "Why Us?",
+    "POINT1_TITLE": "Transparency",
+    "POINT1_DESC": "We maintain transparent relationships with our clients and partners.",
+    "POINT2_TITLE": "Quality & Excellence",
+    "POINT2_DESC": "Our services are high-quality and align with the latest market developments.",
+    "POINT3_TITLE": "Safety & Compliance",
+    "POINT3_DESC": "We adhere to laws and international quality and safety standards."
+  },
+
+  "SERVICES_DESCRIPTION": "We offer you our unique and comprehensive services that meet your needs and fulfill your aspirations. We provide a wide range of high-quality products at competitive prices, including electrical and sanitary products, perfumes, cosmetics, carpentry tools, and locks. We are committed to delivering a distinguished shopping experience that combines variety and reliability to meet all our customers' requirements.",
+
+  "SERVICES_LIST": [
+    {
+      "title": "Delivery Services",
+      "description": "The Kuwaiti Gulf Company provides delivery services to its customers across Kuwait through cooperatives, exhibitions, and its sales and distribution team.",
+      "image": "../../assets/catogries/charg.jpeg"
+    },
+    {
+      "title": "Warranty Services",
+      "description": "The Kuwaiti Gulf Company offers warranty and replacement services for electrical and lighting products sold through its showrooms, according to the warranty period specified for each product and company.",
+      "image": "../../assets/catogries/daman.png"
+    },
+    {
+      "title": "Pre-Sales Services",
+      "description": "The Kuwaiti Gulf Electrical Contracting Company provides the best electrical products (circuit breakers, cylinders, light bulbs, switches) and certified locks that meet Kuwaiti standards at the highest quality and best prices.",
+      "image": "../../assets/catogries/before_buing.jpeg"
+    },
+    {
+      "title": "Project Services",
+      "description": "We have a specialized and highly trained team to execute, supply, and install project requests for all electrical products (circuit breakers, cylinders, light bulbs, switches) and locks.",
+      "image": "../../assets/catogries/projects.jpeg"
+    }
+  ],
+
+  
+  "DEPARTMENTS": {
+  "TITLE": "Departments",
+  "DESCRIPTION": "Explore our diverse range of specialized departments.",
+  "VIEW_PRODUCTS": "View Products",
+  
+  "ELECTRICAL_TOOLS": {
+    "TITLE": "Electrical Tools",
+    "DESCRIPTION": "A wide range of high-quality electrical tools and equipment."
+  },
+  "SANITARY_TOOLS": {
+    "TITLE": "Sanitary Tools",
+    "DESCRIPTION": "Various sanitary products that meet all your needs."
+  },
+  "CARPENTRY_LOCK_TOOLS": {
+    "TITLE": "Carpentry & Lock Tools",
+    "DESCRIPTION": "High-quality carpentry and lock tools for professional and home use."
+  },
+  "PERFUMES_COSMETICS": {
+    "TITLE": "Perfumes & Cosmetics",
+    "DESCRIPTION": "A luxury collection of perfumes and cosmetics from the best global brands."
+  }
+}
+
+}
+  

@@ -1,0 +1,53 @@
+<app-slider></app-slider>
+
+<div data-aos="fade-up" class="container text-center my-5 lh-1">
+    <h2>
+        {{ 'SLIDER.COMPANY_NAME' | translate }}
+        
+    </h2>
+
+    <h4 class="w-75 m-auto lh-lg">
+        {{ 'ABOUT_SECTION.US_DESCRIPTION' | translate }}
+    </h4>
+</div>
+
+
+<app-counter></app-counter>
+<app-categories></app-categories>
+
+<!-- قسم "لماذا نحن" -->
+<section class="why-us py-5 text-center" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">
+            {{ 'WHY_US.TITLE' | translate }}
+            <div class="yellowline" style="border: 3px solid red; width: 100px; margin: auto; margin-top:10px;"></div>
+
+        </h2>
+        <div class="red-line"></div>
+        
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="why-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-handshake icon"></i>
+                    <h4>{{ 'WHY_US.POINT1_TITLE' | translate }}</h4>
+                    <p>{{ 'WHY_US.POINT1_DESC' | translate }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="why-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-cogs icon"></i>
+                    <h4>{{ 'WHY_US.POINT2_TITLE' | translate }}</h4>
+                    <p>{{ 'WHY_US.POINT2_DESC' | translate }}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="why-card" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h4>{{ 'WHY_US.POINT3_TITLE' | translate }}</h4>
+                    <p>{{ 'WHY_US.POINT3_DESC' | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-departments></app-departments>

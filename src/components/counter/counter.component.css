@@ -1,0 +1,10 @@
+.bg-counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../assets/6012738959685306178.jpg) no-repeat center center/cover;
+    padding-top: 2rem;
+
+    font-size: 1rem;
+}
+
+span{
+    font-size: 3em;
+}

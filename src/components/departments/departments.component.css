@@ -1,0 +1,182 @@
+/* departments.component.css */
+:root {
+  --primary-color: #e74c3c;
+  --white-color: #ffffff;
+  --black-color: #222222;
+  --gray-light: #f5f5f5;
+  --gray-dark: #333333;
+}
+
+.departments-container {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: var(--black-color);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-right: 1rem;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 70%;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.department-card {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.2);
+}
+
+.card-image {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.department-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 1.2rem;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--gray-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--primary-color);
+  position: relative;
+  top: -35px;
+  margin-bottom: -20px;
+  border: 3px solid var(--white-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon i {
+  font-size: 1.3rem;
+}
+
+.department-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 0.8rem;
+}
+
+.department-desc {
+  color: var(--gray-dark);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.9), rgba(178, 34, 34, 0.95));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white-color);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 10px;
+}
+
+.card-overlay span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-overlay i {
+  font-size: 1.2rem;
+  animation: moveLeftRight 1.5s infinite ease-in-out;
+}
+
+.department-card:hover .card-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes moveLeftRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .departments-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .department-card {
+    height: auto;
+    min-height: 280px;
+  }
+}

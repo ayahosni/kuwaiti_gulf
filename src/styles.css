@@ -1,0 +1,105 @@
+.tajawal-extralight {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.tajawal-light {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.tajawal-regular {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tajawal-medium {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.tajawal-bold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.tajawal-extrabold {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.tajawal-black {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline-style: none;
+    font-family: "Tajawal", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    direction: rtl;
+
+}
+
+
+:root {
+    --txtaccent: #fff;
+    --txtaccent1: #9D9D9F;
+    --textaccent2: #73757E;
+    --textaccent3: #484848;
+    --txtaccent4: #000;
+    --txtaccent5: #E5E5E5;
+    --haccent: #153265;
+    --lcolor: #18499c;
+
+    --haccent_withOpacity: rgba(255, 203, 15, 0.6);
+    --haccent2: #C79E23;
+    --bgaccent: #1A1C27;
+    --bgaccent_withOpacity: rgba(26, 28, 39, 0.96);
+}
+
+.container {
+    width: 95%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+.yellowline {
+    background-color: #19376b;
+    height: 5px;
+    width: 50px;
+    margin: 20px auto;
+
+
+}
+
+.line-with-text {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 5px;
+    background-color: var(--haccent);
+    margin: 0 10px;
+}
+
+.text {
+    white-space: nowrap;
+
+}
